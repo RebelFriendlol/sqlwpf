@@ -1,0 +1,33 @@
+﻿<Window x:Class="sqlwpfkurwamac.rejestracja"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:sqlwpfkurwamac"
+        mc:Ignorable="d"
+        Title="rejestracja" Height="726" Width="654">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF211F1F" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="tytul" Content="Dodaj użytkownika" Margin="10,10,10,597" Foreground="White" FontSize="36" FontFamily="Microsoft JhengHei"/>
+        <Button x:Name="Zarejestrujsie" Content="Zarejestruj sie" HorizontalAlignment="Center" Margin="0,658,0,0" VerticalAlignment="Top" Width="160" Click="Button_Click" Height="42" Background="{x:Null}" FontSize="18" Foreground="White"/>
+        <Label x:Name="tytul_Copy" Content="Login:" Margin="10,76,230,560" Foreground="White" FontSize="36" FontFamily="Microsoft JhengHei"/>
+        <Label x:Name="tytul_Copy1" Content="Email:&#xD;&#xA;" Margin="10,155,230,469" Foreground="White" FontSize="36" FontFamily="Microsoft JhengHei"/>
+        <Label x:Name="tytul_Copy2" Content="Haslo:" Margin="10,228,230,399" Foreground="White" FontSize="36" FontFamily="Microsoft JhengHei"/>
+        <Label x:Name="tytul_Copy3" Content="Kraj:" Margin="10,316,230,312" Foreground="White" FontSize="36" FontFamily="Microsoft JhengHei"/>
+        <TextBox x:Name="textlogin" HorizontalAlignment="Left" Margin="131,89,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="373" Height="49" FontSize="36" FontFamily="Microsoft JhengHei"/>
+        <TextBox x:Name="textemial" HorizontalAlignment="Left" Margin="122,167,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="373" Height="49" FontSize="36" FontFamily="Microsoft JhengHei"/>
+        <TextBox x:Name="texthaslo" HorizontalAlignment="Left" Margin="131,241,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="373" Height="49" FontSize="36" FontFamily="Microsoft JhengHei"/>
+        <TextBox x:Name="textkraj" HorizontalAlignment="Left" Margin="93,325,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="373" Height="49" FontSize="36" FontFamily="Microsoft JhengHei"/>
+        <Label x:Name="tytul_Copy4" Content="Data Urodzenia" Margin="10,394,230,234" Foreground="White" FontSize="36" FontFamily="Microsoft JhengHei"/>
+        <Label x:Name="tytul_Copy5" Content="Plec:" Margin="10,469,545,144" Foreground="White" FontSize="36" FontFamily="Microsoft JhengHei"/>
+        <CheckBox x:Name="men" Content="Mezczyzna" HorizontalAlignment="Left" Margin="114,492,0,0" VerticalAlignment="Top" Background="White" Foreground="White" Height="33"/>
+        <CheckBox x:Name="female" Content="Kobieta" HorizontalAlignment="Left" Margin="208,492,0,0" VerticalAlignment="Top" Foreground="White" Height="28"/>
+        <DatePicker x:Name="textdata" HorizontalAlignment="Left" Margin="289,411,0,0" VerticalAlignment="Top" Height="33" Width="215" FontSize="16"/>
+
+    </Grid>
+</Window>

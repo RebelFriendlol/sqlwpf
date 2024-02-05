@@ -1,0 +1,60 @@
+﻿<Window x:Class="sqlwpfkurwamac.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:sqlwpfkurwamac"
+        mc:Ignorable="d"
+        Title="Lista Użytkowników" Height="473" Width="800" WindowStyle="ThreeDBorderWindow">
+
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black"/>
+            <GradientStop Color="#FF211F1F" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+
+    <Grid Margin="10,10,0,-6">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="22*"/>
+            <RowDefinition Height="183*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="28*"/>
+            <ColumnDefinition Width="70*"/>
+            <ColumnDefinition Width="48*"/>
+            <ColumnDefinition Width="219*"/>
+            <ColumnDefinition Width="6*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid Name="usersDataGrid"   Margin="40,55,87,104" FontSize="24" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" >
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow">
+                    <Setter Property="Background" Value="Transparent" />
+                    <Setter Property="Foreground" Value="White" />
+                    <Setter Property="Margin" Value="0" />
+                    <!-- Usunięcie marginesu -->
+                    <Setter Property="Padding" Value="0" />
+                    <!-- Usunięcie wewnętrznej przestrzeni -->
+                </Style>
+            </DataGrid.RowStyle>
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="Background" Value="Transparent" />
+                    <Setter Property="Foreground" Value="White" />
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
+            <DataGrid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF211F1F" Offset="1"/>
+                </LinearGradientBrush>
+            </DataGrid.Background>
+        </DataGrid>
+
+        <Label x:Name="tytul" Content="Alberto Player lista użytkowników: " Margin="40,10,-368,354" Foreground="White" FontSize="36" FontFamily="Microsoft JhengHei" Grid.ColumnSpan="4" Grid.Column="1" Grid.RowSpan="2"/>
+        <Button x:Name="rejestracja" Content="Dodaj użytkownika" HorizontalAlignment="Left" Margin="40,319,0,0" VerticalAlignment="Top" Width="161" Click="Button_Click" Height="42" Grid.Row="1" Grid.Column="1" Background="{x:Null}" FontSize="18" Foreground="White" Grid.ColumnSpan="2"/>
+        
+        <Button x:Name="player_Kopiuj" Content="dodaj obrazek" HorizontalAlignment="Left" Margin="198,319,0,0" VerticalAlignment="Top" Width="161" Click="Button_Click4" Height="42" Grid.Row="1" Grid.Column="3" Background="{x:Null}" FontSize="18" Foreground="White"/>
+    </Grid>
+
+</Window>
