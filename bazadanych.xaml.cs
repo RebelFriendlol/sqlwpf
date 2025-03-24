@@ -9,7 +9,7 @@ namespace sqlwpfkurwamac
     /// <summary>
     /// Logika interakcji dla klasy dupa.xaml
     /// </summary>
-    public partial class dupa : Window
+    public partial class bazadanych : Window
     {
         private byte[] imageBytes;
 
