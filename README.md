@@ -1,25 +1,25 @@
-# AlbertoPlayer (CSHARPGUI) - Graphical User Interface / Interfejs Graficzny
+# sqlwpf - Database Layer / Warstwa Bazy Danych
 
 ---
 
 ## 🇵🇱 Wersja Polska
 
 ### O projekcie
-Projekt aplikacji okienkowej .NET realizujący graficzny interfejs użytkownika (GUI) dla odtwarzacza muzycznego. Skupia się na dostarczeniu intuicyjnego UI (przyciski Play/Pause, paski postępu, suwaki głośności oraz wizualne listy utworów).
+Projekt uniwersytecki realizujący warstwę trwałego przechowywania danych (Persistence Layer) dla aplikacji okienkowej przy użyciu języka SQL oraz technologii WPF/.NET. Odpowiada za zapisywanie utworów, profili użytkowników i konfiguracji playlist w relacyjnej bazie danych.
 
 ###  Jak ten projekt łączy się z pozostałymi?
-Ten projekt to **Twarz (Warstwa Prezentacji)** całego systemu odtwarzacza:
-* Każde kliknięcie użytkownika (np. naciśnięcie „Play”) wywołuje funkcje pod spodem z silnika logicznego w repozytorium **`csharp-musicplayer`**.
-* Wyświetla playlisty i listy utworów, które zostały pobrane z bazy danych za pośrednictwem projektu **`sqlwpf`**.
+Ten projekt to **Pamięć (Warstwa Danych)** całego systemu odtwarzacza:
+* Zapewnia, że utwory zarządzane przez silnik **`csharp-musicplayer`** nie znikają po wyłączeniu programu.
+* Pozwala interfejsowi **`CSHARPGUI / AlbertoPlayer`** wczytywać zapisane wcześniej ulubione playlisty użytkownika bezpośrednio z bazy danych SQL.
 
 ---
 
 ## 🇬🇧 English Version
 
 ### About the Project
-A .NET desktop application project focused on delivering the Graphical User Interface (GUI) for the music player. It provides an intuitive UI layout featuring Play/Pause buttons, progress bars, volume sliders, and visual track lists.
+A university project implementing the data persistence layer for a desktop application using SQL and WPF/.NET. It focuses on storing tracks, user profiles, and playlist configurations within a relational database.
 
 ###  How this project connects to the others?
-This project acts as the **Face (Presentation Layer)** of the entire music player architecture:
-* Every user interaction (e.g., clicking "Play") triggers underlying execution routines handled by the core engine in the **`csharp-musicplayer`** repository.
-* It renders playlists and song collections that are queried from the database via the **`sqlwpf`** project.
+This project acts as the **Memory (Data Layer)** of the entire music player architecture:
+* It ensures that tracks managed by the **`csharp-musicplayer`** engine are persistent and not lost when the application closes.
+* It allows the **`CSHARPGUI / AlbertoPlayer`** interface to populate and load previously saved user playlists directly from the SQL database tables.
